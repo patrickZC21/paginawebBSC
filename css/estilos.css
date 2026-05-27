@@ -1599,7 +1599,16 @@ ul {
   }
 
   .contact-form {
-    padding: 28px;
+    padding: 20px 16px;
+    overflow: hidden;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .hero::before {

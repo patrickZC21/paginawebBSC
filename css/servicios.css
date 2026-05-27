@@ -359,7 +359,15 @@
 
   .service-illustration {
     max-height: 280px;
+  }
+
+  /* For alternate sections (image first in HTML), push image below content on mobile */
+  .service-detail-alt .service-detail-grid .service-detail-content {
     order: -1;
+  }
+
+  .service-detail-alt .service-detail-grid .service-illustration {
+    order: 1;
   }
 
   /* Make header CTA smaller on tablet/mobile so it doesn't cover the logo */
