@@ -1545,6 +1545,7 @@ ul {
 
   .hero-image {
     padding-top: 0;
+    display: none;
   }
 
   .hero-image-circle {
