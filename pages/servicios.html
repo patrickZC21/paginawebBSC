@@ -739,7 +739,13 @@
     window.addEventListener('scroll', () => {
       const scrollY = window.scrollY;
       header.classList.toggle('scrolled', scrollY > 60);
-      if (headerCta) headerCta.style.display = scrollY > 60 ? 'inline-flex' : 'none';
+      if (headerCta) {
+        if (window.innerWidth > 1024) {
+          headerCta.style.display = scrollY > 60 ? 'inline-flex' : 'none';
+        } else {
+          headerCta.style.display = 'none';
+        }
+      }
       backToTop.classList.toggle('visible', scrollY > 500);
     });
 

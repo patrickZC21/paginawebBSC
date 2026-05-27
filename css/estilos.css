@@ -32,6 +32,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -1509,6 +1510,13 @@ ul {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
+  .hero::before {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    right: -100px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1532,6 +1540,7 @@ ul {
 
   .hero-content {
     padding-top: 0;
+    max-width: 100%;
   }
 
   .hero-image {
@@ -1590,6 +1599,29 @@ ul {
 
   .contact-form {
     padding: 28px;
+  }
+
+  .hero::before {
+    display: none;
+  }
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .whatsapp-float svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 80px;
   }
 }
 
